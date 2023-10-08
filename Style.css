@@ -49,12 +49,15 @@ nav ul li a:hover {
   align-items: center;
   margin: 80px 0;
   height: 70vh;
+  
+  
 }
 .firstsection > div {
   width: 30%;
 }
 .leftsection {
   font-size: 30px;
+  
 }
 .rightsection img {
   width: 70%;
@@ -103,6 +106,24 @@ nav ul li a:hover {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
     0 0 200px cyan;
 }
+/* add animations to this sections */
+
+.firstsection .rightsection img {
+  animation: animate2 1s linear infinite;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 /* ---------------------------------  About section ---------------------------------   */
 
@@ -547,6 +568,27 @@ nav ul li a:hover {
   border-radius: 10px;
   padding: 30px;
 }
+/* add animation to certificates section */
+.pro1 img:hover,
+.pro2 img:hover,
+.pro3 img:hover,
+.pro4 img:hover,
+.pro5 img:hover,
+.pro6 img:hover {
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*-------------------------------------------------Projects------------------------------------------------*/
 .prom {
   display: flex;
@@ -621,6 +663,9 @@ nav ul li a:hover {
 .prom3 h3 {
   margin-top: 10px;
 }
+
+
+
 
 /*-----------------------------------------------Contact Form--------------------------------*/
 footer {
